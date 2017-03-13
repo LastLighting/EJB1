@@ -13,7 +13,7 @@ public class DAO {
 
     Logger logger;
     Connection connection;
-    @Resource(name = "jdbc/logofparadiseconnection")
+    @Resource(name = "ManJNDI")
     DataSource dataSource;
 
     public DAO() {
@@ -23,7 +23,7 @@ public class DAO {
         InitialContext initialContext = null;
         try {
             initialContext = new InitialContext();
-            dataSource = (DataSource) initialContext.lookup("java:comp/env/jdbc/logofparadiseconnection");
+            dataSource = (DataSource) initialContext.lookup("java:comp/env/ManJNDI");
             connection = dataSource.getConnection();
         }
         catch (SQLException sqlException) {

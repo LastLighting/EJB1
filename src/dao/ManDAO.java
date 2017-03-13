@@ -1,14 +1,14 @@
 package dao;
 
-import entities.LostSoul;
+import entities.Man;
 
 import javax.ejb.Local;
 import javax.ejb.Remote;
 import java.util.List;
 
-@Local
-public interface SoulDAO {
-    List<LostSoul> selectAllSoul();
+@Remote
+public interface ManDAO {
+    List<Man> selectAllMan();
 //    void addSoul(LostSoul lostSoul);
 //    void deleteSoulById(int id);
 }

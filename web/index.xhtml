@@ -6,46 +6,25 @@
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
    <f:view>
-      <h:dataTable value="#{lostSoulBean.listOfLostSoul}" var="soul">
+      <h:dataTable value="#{manBean.listMans}" var="man">
          <h:column>
             <f:facet name="header">Идентификатор</f:facet>
             <div align="center">
-               <h:outputText value="#{soul.idSoul}" />
+               <h:outputText value="#{man.id}" />
             </div>
          </h:column>
 
          <h:column>
             <f:facet name="header">Имя</f:facet>
             <div align="center">
-               <h:outputText value="#{soul.name}" />
+               <h:outputText value="#{man.name}" />
             </div>
          </h:column>
 
          <h:column>
             <f:facet name="header">Возраст</f:facet>
             <div align="center">
-               <h:outputText value="#{soul.age}" />
-            </div>
-         </h:column>
-
-         <h:column>
-            <f:facet name="header">Причина смерти</f:facet>
-            <div align="center">
-               <h:outputText value="#{soul.couseOfDeath}" />
-            </div>
-         </h:column>
-
-         <h:column>
-            <f:facet name="header">Дата смерти</f:facet>
-            <div align="center">
-               <h:outputText value="#{soul.dateOfDeath}" />
-            </div>
-         </h:column>
-
-         <h:column>
-            <f:facet name="header">Жизненные заслуги</f:facet>
-            <div align="center">
-               <h:outputText value="#{soul.lifeIvents}" />
+               <h:outputText value="#{man.old}" />
             </div>
          </h:column>
       </h:dataTable>

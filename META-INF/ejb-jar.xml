@@ -7,8 +7,8 @@
     <enterprise-beans>
         <session>
             <ejb-name>ejb</ejb-name>
-            <business-remote>dao.SoulDAO</business-remote>
-            <ejb-class>dao.SoulDAOImpl</ejb-class>
+            <business-remote>dao.ManDAO</business-remote>
+            <ejb-class>dao.ManDAOImpl</ejb-class>
             <session-type>Stateless</session-type>
             <transaction-type>Container</transaction-type>
         </session>
