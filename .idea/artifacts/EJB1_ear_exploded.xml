@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" name="EJB1:ear exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/EJB1_ear_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="EJB1/javaeeApplication/javaEEApplication" />
+      <element id="directory" name="web.war">
+        <element id="artifact" artifact-name="EJB1:war exploded" />
+      </element>
+      <element id="directory" name="ejb.jar">
+        <element id="artifact" artifact-name="EJB1:ejb exploded" />
+      </element>
+      <element id="directory" name="lib">
+        <element id="library" level="project" name="PrimeFaces-5.2" />
+        <element id="library" level="project" name="Mojarra-2.2.1" />
+      </element>
+    </root>
+  </artifact>
+</component>
